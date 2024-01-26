@@ -7,6 +7,7 @@ const io = require("socket.io")(http, {
 });
 
 app.get("/", (req, res) => {
+  console.log("/ Called");
   res.send("<h1>Hey Socket.io</h1>");
 });
 
